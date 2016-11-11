@@ -3,4 +3,4 @@
   cron:
     name: "execute metrics.sh"
     minute: "*"
-    job: "/opt/scripts/metrics.sh"
+    job: "./opt/scripts/cronscript.sh"
