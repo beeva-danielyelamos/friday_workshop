@@ -1,0 +1,3 @@
+---
+cron_script_path: /opt/scripts
+cron_script_name: cronscript.sh

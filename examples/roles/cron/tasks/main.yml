@@ -1,6 +1,6 @@
 ---
-- name: "create entry for metrics.sh in cron"
+- name: "create entry for {{ cron_script_name }} in cron"
   cron:
-    name: "execute metrics.sh"
+    name: "execute {{ cron_script_name }}"
     minute: "*"
-    job: "./opt/scripts/cronscript.sh"
+    job: ".{{ cron_script_path }}/{{ cron_script_name }}"
