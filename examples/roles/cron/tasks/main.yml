@@ -1,4 +1,8 @@
 ---
+
+- name: "send the script to the correct path"
+  template: scr=template/{{ cron_script_name }} dest={{ cron_script_path }}/{{ cron_script_name }} mode=0777
+
 - name: "create entry for {{ cron_script_name }} in cron"
   cron:
     name: "execute {{ cron_script_name }}"
