@@ -1,0 +1,37 @@
+---
+#- name: Add the Nodesource apt key
+      #apt_key: url=https://deb.nodesource.com/gpgkey/nodesource.gpg.key state=present
+ 
+    #- name: Add nodesource repository
+     # yum_repository: name=nodejdk baseurl='deb https://deb.nodesource.com/node_0.10 trusty main' state=present
+
+- name: Add the Nodesource apt key
+  unarchive: 
+    src: "{{ node_mirror }}v{{ node_version }}/node-v{{ node_version }}-linux-x64.tar.xz"
+    dest: /opt/
+    remote_src: yes
+
+- name: link 1
+  file:
+    state: link
+    src: /opt/node-v{{node_version}}-linux-x64
+    path: /opt/node
+
+- name: link 2
+  file:
+    state: link
+    src: /opt/node/bin/node
+    path: /usr/bin/node
+
+- name: link 3
+  file:
+    state: link
+    src: /opt/node/bin/npm
+    path: /usr/bin/npm
+
+- name: create node user
+  user:
+    name: node
+    comment: user node
+    createhome: yes
+    state: present
