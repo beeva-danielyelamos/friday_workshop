@@ -4,6 +4,6 @@
   become: true
 
   roles:
+    - psutil
     - enviarScript
     - cron
-    
