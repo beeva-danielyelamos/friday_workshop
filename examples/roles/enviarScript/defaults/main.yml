@@ -1,2 +1,4 @@
 ---
-script: metrics.sh.j2
+script: metrics.py
+ip_monitor: 52.50.96.225
+port_monitor: 8125
