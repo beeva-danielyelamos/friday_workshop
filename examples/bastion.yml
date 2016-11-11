@@ -4,6 +4,9 @@
   remote_user: centos
   become: true
   
-  tasks:
-    - name: upgrade all packages
-      yum: name=* state=latest
+  roles:
+    - selinux
+    
+  pre-tasks:
+    - name: BASTION | upgrade all packages
+      package: name=* state=latest

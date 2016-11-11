@@ -1,0 +1,224 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vpc",
+				"vpcid"
+			],
+			[
+				"describe_",
+				"describe_vpc"
+			],
+			[
+				"Dat",
+				"DATE"
+			],
+			[
+				"FLAG",
+				"FLAGA"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/danielyelamos/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/bastion.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/front.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/locale/tasks/main.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/back.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/openjdk/tasks/main.yaml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/locale/defaults/main.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/locale/default/main.yml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/templates/tomcat.service",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/locale/templates/locale.conf",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/timezone/tasks/main.yaml",
+		"/home/danielyelamos/ansi_day3/talk-ansible/examples/roles/locale/main.yml",
+		"/home/danielyelamos/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/danielyelamos/api_exercise/credentials.json",
+		"/home/danielyelamos/api_exercise/lib/test_ec2.py",
+		"/home/danielyelamos/api_exercise/lib/ec2.py",
+		"/home/danielyelamos/api_exercise/api.py",
+		"/home/danielyelamos/api_exercise/lib/__init__.py",
+		"/home/danielyelamos/python/example.json",
+		"/home/danielyelamos/lib/api.py",
+		"/home/danielyelamos/lib/ec2.py",
+		"/home/danielyelamos/Incidents",
+		"/home/danielyelamos/python/noob.py",
+		"/home/danielyelamos/python/libs.py",
+		"/home/danielyelamos/python/REST.py",
+		"/home/danielyelamos/python/exercise1.py",
+		"/home/danielyelamos/List: Naya humans Mid",
+		"/home/danielyelamos/Descargas/credentials(1).csv",
+		"/home/danielyelamos/report.sh",
+		"/home/danielyelamos/passwdct.sh",
+		"/home/danielyelamos/dictionary.sh",
+		"/home/danielyelamos/check_devices.sh",
+		"/home/danielyelamos/new_users.sh",
+		"/home/danielyelamos/dateplus91.sh",
+		"/home/danielyelamos/custom_date.sh",
+		"/home/danielyelamos/userbackup.sh",
+		"/home/danielyelamos/listado.sh",
+		"/home/danielyelamos/userbackup",
+		"/home/danielyelamos/Documentos/Bienvenido al maravilloso mundo de vi.txt",
+		"/home/danielyelamos/notes",
+		"/home/danielyelamos/exists.sh"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"white",
+			" = "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"="
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sample.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 199.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

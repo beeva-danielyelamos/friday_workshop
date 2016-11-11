@@ -1,0 +1,10 @@
+---
+
+- name: BASTION | install selinux
+  package: name={{ item }} state=latest
+  with_items:
+    - selinux-policy 
+    - selinux-policy-targeted 
+    - policycoreutils-python
+- name: BASTION |  
+  template: src=templates/config dest=/etc/selinux/. mode=0755
