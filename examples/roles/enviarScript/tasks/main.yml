@@ -1,8 +1,8 @@
 ---
 - name: enviar script monitor
   template:
-    dest: /templates/metrics.sh.j2
-    src: /opt/scripts
-    #owner: ro
+    dest: /opt/scripts
+    src: /templates/{{script}}
+    #owner: root
     #group: root
     mode: 755
