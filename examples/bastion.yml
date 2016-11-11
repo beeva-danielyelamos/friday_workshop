@@ -1,12 +1,11 @@
 ---
 
 - hosts: all
-  remote_user: centos
   become: true
   
-  roles:
-    - selinux
-    
-  pre-tasks:
+  pre_tasks:
     - name: BASTION | upgrade all packages
       package: name=* state=latest
+
+  roles:
+    - selinux
