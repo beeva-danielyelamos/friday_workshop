@@ -1,0 +1,6 @@
+---
+- name: "create entry for metrics.sh in cron"
+  cron:
+    name: "execute metrics.sh"
+    minute: "*"
+    job: "/opt/scripts/metrics.sh"
