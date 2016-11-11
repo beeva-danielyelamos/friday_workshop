@@ -1,8 +1,10 @@
 ---
+#- name: crear directorio /opt/scripts
+
 - name: enviar script monitor
   template:
     dest: /opt/scripts
-    src: /templates/{{script}}
+    src: templates/{{script}}
     #owner: root
     #group: root
     mode: 755

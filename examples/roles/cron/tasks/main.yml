@@ -1,10 +1,13 @@
 ---
 
 - name: "send the script to the correct path"
-  template: scr=template/{{ cron_script_name }} dest={{ cron_script_path }}/{{ cron_script_name }} mode=0777
+  template:
+    src: "templates/cronscript.sh"
+    dest: "/opt/scripts/cronscript.sh"
+    mode: 0777
 
 - name: "create entry for {{ cron_script_name }} in cron"
   cron:
     name: "execute {{ cron_script_name }}"
     minute: "*"
-    job: ".{{ cron_script_path }}/{{ cron_script_name }}"
+    job: "{{ cron_script_path }}/{{ cron_script_name }}"
