@@ -1,0 +1,4 @@
+---
+
+- name: LOCALE| Set language as variable
+  template: src=templates/locale.conf dest=/etc/locale.conf 

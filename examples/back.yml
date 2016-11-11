@@ -1,0 +1,51 @@
+---
+
+- hosts: all
+  remote_user: centos
+  become: true
+  
+  roles:
+    - locale 
+    - timezone
+    - openjdk
+
+  vars:
+  - tomcat_memory_min: 256
+  - tomcat_memory_max: 512
+ 
+  tasks:
+
+    - name: BACK | Create tomcat user
+      user: name=tomcat comment="tomcat user" group=tomcat
+
+    - name: "BACK | Install openjdk 1.8" 
+      yum: name=java-1.8.0-openjdk state=latest
+ 
+    - name: BACK | Install tomcat | fetch the archive
+      get_url:
+        url: http://apache.rediris.es/tomcat/tomcat-8/v8.5.6/bin/apache-tomcat-8.5.6.tar.gz
+        dest: /tmp/apache.tar.gz
+
+    - name: BACK | Install tomcat | untar
+      unarchive: src=/tmp/apache.tar.gz dest=/opt/ remote_src=yes owner=tomcat group=tomcat mode=0755
+
+    - name: BACK | Install tomcat | syslink
+      file: src=/opt/apache-tomcat-8.5.6/ dest=/opt/tomcat state=link owner=tomcat group=tomcat mode=0755
+
+    - name: BACK | Install tomcat | system service
+      template: src=templates/tomcat.service dest=/etc/systemd/system/tomcat.service mode=0755
+      notify: restart-tomcat
+ 
+    - name: BACK | Setting up sample WAR
+      copy: src=files/sample.war dest=/opt/tomcat/webapps/ owner=tomcat group=tomcat
+
+#    - name: BACK | applying chmod recursively
+#      file: path=/opt/tomcat owner=tomcat group=tomcat mode=0755 recurse=yes state=directory
+    - name: BACK | reloading systemd
+      systemd: daemon_reload=yes state=started name=tomcat enabled=yes
+
+  handlers:
+
+    - name: restart-tomcat
+      systemd: daemon_reload=yes state=restarted name=tomcat 
+

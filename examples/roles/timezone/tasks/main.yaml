@@ -1,0 +1,4 @@
+---
+
+- name: TIMEZONE | Set Madrid timezone
+  timezone: name=Europe/Madrid
